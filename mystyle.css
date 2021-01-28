@@ -8,7 +8,9 @@ body{
 }
 
 .d-block{
- height: 200px;
+ border: 2px solid #6c6a6b;
+ border-radius: 30px;
+ box-shadow: 5px 9px 11px 0px #261212;
 }
 
 button {
@@ -18,15 +20,35 @@ button {
 button: hover{
 	background-color: green;
 }
+#i1{
+ width: 680px;
+ height: 150px;
+ border-radius: 20px;
+ opacity: 0.7;
+}
+
+#bg1{	
+ background-color: #292727;
+ overflow: hidden;
+}
 
 .whitebg{
 	height: 100%;
 	width: 50px;
 	background-color: #fff;
-	
-	box-shadow: inset -2px -4px #42426e;
+	vertical-align: top;
+	box-shadow: inset -4px -7px 2px 0 #42426e;
+	padding-bottom: 0px;
+	padding-top: 21%;
+	padding-bottom: 3%;
+	color: black;
+	font-weight: bold;
+
 }
 
+.whitebg:focus{
+	background-color: #cec6c6;
+}
 
 .blackbg{
 	height: 55%;
@@ -37,18 +59,21 @@ button: hover{
 	vertical-align: top;
 	position: relative;
 	z-index: 2;
-	box-shadow: inset -1px -2px #555555;
+	box-shadow: inset -2px -4px 2px 0 #2f2929;
+	color: white;
+	padding-top: 9%;
+	padding-bottom: 2%;
 }
 
-/*.button:after {
-  background: #90EE90;
+.blackbg:focus{
+	background-color: #403e3e;
 }
 
-.button:active:after {
-  padding: 0;
-  margin: 0;
-  opacity: 1;
-}*/
-#w3,#w7{
+#w3,#w7,#w0{
 	margin-right: -7px;
+}
+
+h5{
+	font-family: 'Courgette', cursive;
+	color: #94ef1b;
 }

@@ -8,56 +8,87 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 		<link rel="stylesheet" href="mystyle.css">
-        
-		<title>Document</title>
+		<style>
+         @import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+        </style>
+		
+		<title>Virtual Piano Player</title>
 	</head>
 	<body>
-		 <div class="d-block">
-		 	<button id="w1" class="whitebg" onclick="myfunc(new Audio('Music_Note/C.wav'))"></button>
-		 	<button id="b1" class="blackbg" onclick="myfunc(new Audio('Music_Note/C_Drum.wav'))"></button>
-		 	<button id="w2" class="whitebg" onclick="myfunc(new Audio('Music_Note/D.wav'))"></button>
-		 	<button id="b2" class="blackbg" onclick="myfunc(new Audio('Music_Note/D_Drum.wav'))"></button>
-		 	<button id="w3" class="whitebg" onclick="myfunc(new Audio('Music_Note/E.wav'))"></button>
-		 	<button id="w4" class="whitebg" onclick="myfunc(new Audio('Music_Note/F.wav'))"></button>
-		 	<button id="b3" class="blackbg" onclick="myfunc(new Audio('Music_Note/F_Drum.wav'))"></button>
-		 	<button id="w5" class="whitebg" onclick="myfunc(new Audio('Music_Note/G.wav'))"></button>
-		 	<button id="b4" class="blackbg" onclick="myfunc(new Audio('Music_Note/G_Drum.wav'))"></button>
-		 	<button id="w6" class="whitebg" onclick="myfunc(new Audio('Music_Note/A.wav'))"></button>
-		 	<button id="b5" class="blackbg" onclick="myfunc(new Audio('Music_Note/Bb_Drum.wav'))"></button>
-		 	<button id="w7" class="whitebg" onclick="myfunc(new Audio('Music_Note/B.wav'))"></button>
-		 	<button id="w8" class="whitebg" onclick="myfunc(new Audio('Music_Note/C1.wav'))"></button>
-		 	<button id="b6" class="blackbg" onclick="myfunc(new Audio('Music_Note/C1_Drum.wav'))"></button>
-		 	<button id="w9" class="whitebg" onclick="myfunc(new Audio('Music_Note/D1.wav'))"></button>
-		 	<button id="b7" class="blackbg" onclick="myfunc(new Audio('Music_Note/D1_Drum.wav'))"></button>
-		 	<button id="w0" class="whitebg" onclick="myfunc(new Audio('Music_Note/E1.wav'))"></button>
-		 </div>
-
-      <script type="text/javascript">
-      	function myfunc(ref)
-      	{
-      	   ref.currentTime=0;
-           ref.play();
-      	} 
-      	document.addEventListener("keypress", e=>{
-            var key=e.key;
-      		if(key=='q') $("#w1").click();
-      		else if(key=='w') $("#w2").click();
-      		else if(key=='e') $("#w3").click();
-      		else if(key=='r') $("#w4").click();
-      		else if(key=='t') $("#w5").click();
-      		else if(key=='y') $("#w6").click();
-      		else if(key=='u') $("#w7").click();
-      		else if(key=='i') $("#w8").click();
-            else if(key=='o') $("#w9").click();
-      		else if(key=='p') $("#w0").click();
-      		else if(key=='1') $("#b1").click();
-      		else if(key=='2') $("#b2").click();
-      		else if(key=='3') $("#b3").click();
-      		else if(key=='4') $("#b4").click();
-      		else if(key=='5') $("#b5").click();
-      		else if(key=='6') $("#b6").click();
-      		else if(key=='7') $("#b7").click();
-      	})
-      </script>
+		<div>
+		<div id="bg1" class="d-block px-4 pb-1">
+			<img id="i1" src="f1.jpg">
+			<div>
+				<button id="w1" class="whitebg" onclick="myfunc(new Audio('Music_Note/C.wav'))">q</button>
+				<button id="b1" class="blackbg " onclick="myfunc(new Audio('Music_Note/C_Drum.wav'))">1</button>
+				<button id="w2" class="whitebg" onclick="myfunc(new Audio('Music_Note/D.wav'))">w</button>
+				<button id="b2" class="blackbg" onclick="myfunc(new Audio('Music_Note/D_Drum.wav'))">2</button>
+				<button id="w3" class="whitebg" onclick="myfunc(new Audio('Music_Note/E.wav'))">e</button>
+				<button id="w4" class="whitebg" onclick="myfunc(new Audio('Music_Note/F.wav'))">r</button>
+				<button id="b3" class="blackbg" onclick="myfunc(new Audio('Music_Note/F_Drum.wav'))">3</button>
+				<button id="w5" class="whitebg" onclick="myfunc(new Audio('Music_Note/G.wav'))">t</button>
+				<button id="b4" class="blackbg" onclick="myfunc(new Audio('Music_Note/G_Drum.wav'))">4</button>
+				<button id="w6" class="whitebg" onclick="myfunc(new Audio('Music_Note/A.wav'))">y</button>
+				<button id="b5" class="blackbg" onclick="myfunc(new Audio('Music_Note/Bb_Drum.wav'))">5</button>
+				<button id="w7" class="whitebg" onclick="myfunc(new Audio('Music_Note/B.wav'))">u</button>
+				<button id="w8" class="whitebg" onclick="myfunc(new Audio('Music_Note/C1.wav'))">i</button>
+				<button id="b6" class="blackbg" onclick="myfunc(new Audio('Music_Note/C1_Drum.wav'))">6</button>
+				<button id="w9" class="whitebg" onclick="myfunc(new Audio('Music_Note/D1.wav'))">o</button>
+				<button id="b7" class="blackbg" onclick="myfunc(new Audio('Music_Note/D1_Drum.wav'))">7</button>
+				<button id="w0" class="whitebg" onclick="myfunc(new Audio('Music_Note/E1.wav'))">p</button>
+				<button id="w10" class="whitebg" onclick="myfunc(new Audio('Music_Note/C_s1.wav'))">a</button>
+				<button id="b8" class="blackbg" onclick="myfunc(new Audio('Music_Note/A_Drum.wav'))">8</button>
+				<button id="w11" class="whitebg" onclick="myfunc(new Audio('Music_Note/D_s1.wav'))">s</button>
+				<button id="b9" class="blackbg" onclick="myfunc(new Audio('Music_Note/Dq_Drum.wav'))">9</button>
+				<button id="w12" class="whitebg" onclick="myfunc(new Audio('Music_Note/F1.wav'))">d</button>
+				<button id="b10" class="blackbg" onclick="myfunc(new Audio('Music_Note/E1_Drum.wav'))">0</button>
+				<button id="w13" class="whitebg" onclick="myfunc(new Audio('Music_Note/G_s.wav'))">f</button>
+			</div>
+		</div>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="container text-center mt-4 mb-0">
+			<h5>#Made In India</h5>
+			<h5>Made By Harshit Shukla</h5>
+		</div>
+		</div>
+		<script type="text/javascript">
+			function myfunc(ref)
+			{
+			ref.currentTime=0;
+		    ref.play();
+			}
+			document.addEventListener("keypress", e=>{
+		        var key=e.key;
+				if(key=='q') $("#w1").click();
+				else if(key=='w') $("#w2").click();
+				else if(key=='e') $("#w3").click();
+				else if(key=='r') $("#w4").click();
+				else if(key=='t') $("#w5").click();
+				else if(key=='y') $("#w6").click();
+				else if(key=='u') $("#w7").click();
+				else if(key=='i') $("#w8").click();
+		        else if(key=='o') $("#w9").click();
+				else if(key=='p') $("#w0").click();
+				else if(key=='a') $("#w10").click();
+				else if(key=='s') $("#w11").click();
+		        else if(key=='d') $("#w12").click();
+				else if(key=='f') $("#w13").click();
+				else if(key=='1') $("#b1").click();
+				else if(key=='2') $("#b2").click();
+				else if(key=='3') $("#b3").click();
+				else if(key=='4') $("#b4").click();
+				else if(key=='5') $("#b5").click();
+				else if(key=='6') $("#b6").click();
+				else if(key=='7') $("#b7").click();
+				else if(key=='8') $("#b8").click();
+				else if(key=='9') $("#b9").click();
+				else if(key=='0') $("#b0").click();
+			})
+		</script>
 	</body>
 </html>
