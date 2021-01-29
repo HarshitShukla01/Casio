@@ -1,7 +1,26 @@
-function myfunc(ref)
+           var prevs;
+           var cat;
+           function myfunc(ref,tf,tt)
 			{
+				if (cat=='a') {document.getElementById(prevs).style.backgroundColor="white";}
+			else if(cat=='b'){
+				document.getElementById(prevs).style.backgroundColor="black";
+			}
+            if (tt=='a') {document.getElementById(tf).style.backgroundColor="#726d6d";}
+			else {
+				document.getElementById(tf).style.backgroundColor="#403e3e";
+			}
+			cat=tt;
+			prevs=tf;
 			ref.currentTime=0;
 		    ref.play();
+		    ref.addEventListener("ended",ef=>{
+		    	
+		    	if (tt=='a') {document.getElementById(tf).style.backgroundColor="white";}
+			else {
+				document.getElementById(tf).style.backgroundColor="black";
+			}
+		    })
 			}
 			document.addEventListener("keypress", e=>{
 		        var key=e.key;
@@ -29,4 +48,4 @@ function myfunc(ref)
 				else if(key=='8') $("#b8").click();
 				else if(key=='9') $("#b9").click();
 				else if(key=='0') $("#b0").click();
-			})
+			});
