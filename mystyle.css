@@ -34,7 +34,7 @@ button: hover{
 
 .whitebg{
 	height: 100%;
-	width: 50px;
+	width: 3.1rem;
 	background-color: #fff;
 	vertical-align: top;
 	box-shadow: inset -4px -7px 2px 0 #42426e;
@@ -53,7 +53,7 @@ button: hover{
 
 .blackbg{
 	height: 55%;
-	width: 40px;
+	width: 2.5rem;
 	margin-left: -25px;
 	margin-right: -25px;
 	background-color: black;
@@ -78,3 +78,28 @@ h5{
 	font-family: 'Courgette', cursive;
 	color: #94ef1b;
 }
+
+#heading1{
+	text-align: center;
+    font-family: 'Pirata One';
+    letter-spacing: 0.3rem;
+    font-size: 3.5rem;
+    color: #ffb630;
+    animation: headanimation 7s linear infinite;;
+}
+
+@keyframes headanimation{
+	0%{
+		color: #20de2e;
+	}
+	50%{
+		color: #cade20;
+	}
+    70%{
+		color: #dc861b;
+	}
+	100%{
+		color: #1ade5f;
+	}
+}
+
